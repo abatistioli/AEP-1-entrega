@@ -1,17 +1,10 @@
 /* =========================================================================
    PSE em Acao - Sistema de Planejamento e Acompanhamento de Acoes
-   Tematica escolhida: Saude Mental e Inclusao (nivel COLETIVO)
+   Tematica escolhida: Saude Mental e Inclusao
 
-   Disciplina: AEP - Engenharia de Software / Analise e Desenvolvimento
-               de Sistemas - Unicesumar - 2 semestre - 2026
-   Curso/Serie: ESOFT2S / ADSIS2S
+   Disciplina: AEP - Analise e Desenvolvimento de Sistemas - Unicesumar - 2 semestre - 2026
+   Curso/Serie: ADSIS2B
 
-   -------------------------------------------------------------------------
-   OBSERVACAO SOBRE O ESTILO DO CODIGO:
-   Todas as funcoes deste arquivo retornam "int" (nenhuma usa "void"),
-   pois esse ainda nao e um tipo estudado em aula. Quando uma funcao nao
-   precisa devolver um valor util, ela apenas "return 0;" ao final, do
-   mesmo jeito que a funcao main() sempre devolve um inteiro.
    -------------------------------------------------------------------------
    IMPORTANTE - LIMITES ETICOS DO SISTEMA (conforme documento da AEP):
    Este programa NAO cadastra nome de aluno, diagnostico, laudo, prontuario
@@ -50,9 +43,7 @@ typedef struct {
     int situacao;                  /* PLANEJADA / REALIZADA / CANCELADA */
 } Acao;
 
-/* ---------------------- Prototipos das funcoes -------------------------
-   Todas retornam int (sem uso de void), conforme explicado acima.
-   ------------------------------------------------------------------- */
+/* ---------------------- Prototipos das funcoes ------------------------- */
 int exibirMenu();
 int limparBufferEntrada();
 int lerInteiro(const char *mensagem);
@@ -131,8 +122,6 @@ int exibirMenu() {
    FUNCOES AUXILIARES DE ENTRADA (evitam repetir validacao em todo lugar)
    ======================================================================== */
 
-/* Limpa o buffer do teclado apos leituras com scanf, evitando bugs no
-   proximo fgets/scanf (residuo do ENTER). */
 int limparBufferEntrada() {
     int c;
     do {
@@ -181,8 +170,7 @@ int lerTexto(const char *mensagem, char destino[], int tamanho) {
 }
 
 /* Verifica se um codigo ja esta cadastrado (evita duplicidade).
-   Corresponde a funcao existeCodigo() referenciada no pseudocodigo
-   e no fluxograma detalhado da 1a entrega. */
+   Corresponde a funcao existeCodigo() referenciada no pseudocodigo e no fluxograma detalhado da 1a entrega. */
 int existeCodigo(Acao acoes[], int total, int codigo) {
     int i;
     int encontrado = 0;
@@ -196,9 +184,7 @@ int existeCodigo(Acao acoes[], int total, int codigo) {
 }
 
 /* Preenche "destino" com o texto correspondente ao codigo de situacao.
-   Em vez de retornar um texto diretamente, a funcao copia o resultado
-   para o vetor de caracteres recebido por parametro (tecnica identica
-   a usada em lerTexto), o que evita o uso de ponteiros de retorno. */
+   Em vez de retornar um texto diretamente, a funcao copia o resultado para o vetor de caracteres recebido por parametro (tecnica identica a usada em lerTexto), o que evita o uso de ponteiros de retorno. */
 int obterSituacaoTexto(int situacao, char destino[]) {
     switch (situacao) {
         case PLANEJADA:
@@ -218,14 +204,6 @@ int obterSituacaoTexto(int situacao, char destino[]) {
 
 /* ========================================================================
    cadastrarAcao
-   Requisito 1 e 6 do escopo: cadastro com validacao de codigo repetido,
-   campos obrigatorios vazios e quantidade negativa.
-
-   Esta funcao implementa, passo a passo, o pseudocodigo "CadastrarAcao"
-   e o fluxograma detalhado (Figura 2) apresentados na 1a entrega da AEP.
-   Os comentarios abaixo fazem a correspondencia direta com cada bloco
-   do pseudocodigo em Portugol, para facilitar a conferencia entre os
-   artefatos.
    ======================================================================== */
 int cadastrarAcao(Acao acoes[], int *total) {
     Acao nova;
@@ -282,7 +260,6 @@ int cadastrarAcao(Acao acoes[], int *total) {
 
 /* ========================================================================
    listarAcoes
-   Requisito 2 do escopo: listar de forma organizada.
    ======================================================================== */
 int listarAcoes(Acao acoes[], int total) {
     int i;
@@ -315,7 +292,6 @@ int listarAcoes(Acao acoes[], int total) {
 
 /* ========================================================================
    pesquisarAcoes
-   Requisito 3 do escopo: pesquisa por codigo, escola ou tema.
    ======================================================================== */
 int pesquisarAcoes(Acao acoes[], int total) {
     int opcao;
@@ -381,8 +357,6 @@ int pesquisarAcoes(Acao acoes[], int total) {
 
 /* ========================================================================
    atualizarSituacao
-   Requisito 4 do escopo: atualizar para planejada/realizada/cancelada,
-   registrando a quantidade efetiva quando for "realizada".
    ======================================================================== */
 int atualizarSituacao(Acao acoes[], int total) {
     int codigoBusca, i, indice = -1;
@@ -446,8 +420,6 @@ int atualizarSituacao(Acao acoes[], int total) {
 
 /* ========================================================================
    gerarResumo
-   Requisito 5 do escopo: resumo geral com quantidade de acoes por
-   situacao, total de participantes e percentual de participacao.
    ======================================================================== */
 int gerarResumo(Acao acoes[], int total) {
     int i;
