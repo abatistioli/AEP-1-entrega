@@ -1,17 +1,17 @@
 /* =========================================================================
-   PSE em Acao - Sistema de Planejamento e Acompanhamento de Acoes
-   Tematica escolhida: Saude Mental e Inclusao
+   PSE em Ação - Sistema de Planejamento e Acompanhamento de Ações
+   Tematica escolhida: Saude Mental e Inclusão
 
    Disciplina: AEP - Analise e Desenvolvimento de Sistemas - Unicesumar - 2 semestre - 2026
    Curso/Serie: ADSIS2B
 
    -------------------------------------------------------------------------
-   IMPORTANTE - LIMITES ETICOS DO SISTEMA (conforme documento da AEP):
-   Este programa NAO cadastra nome de aluno, diagnostico, laudo, prontuario
-   ou qualquer dado clinico/individual. Ele trabalha apenas com ACOES
-   COLETIVAS do Programa Saude na Escola (ex: rodas de conversa, capacitacao
+   IMPORTANTE - LIMITES ÉTICOS DO SISTEMA (conforme documento da AEP):
+   Este programa NÃO cadastra nome de aluno, diagnostico, laudo, prontuario
+   ou qualquer dado clinico/individual. Ele trabalha apenas com AÇÕES
+   COLETIVAS do Programa Saude na Escola (ex: rodas de conversa, capacitação
    de professores, semanas de acolhimento), preservando a privacidade dos
-   estudantes. O sistema NAO realiza diagnostico, triagem ou prescricao.
+   estudantes. O sistema NÃO realiza diagnostico, triagem ou prescrição.
    ========================================================================= */
 
 #include <stdio.h>
