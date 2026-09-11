@@ -19,8 +19,11 @@ em `src/` já foi iniciado como preparação para a 2ª entrega.
 ## Integrantes do grupo
 
 | Nome | RA | Série |
+
 | Wagner Felipe Lima da Silva | 26012632-2 | ADSIS2B |
+
 | Alessandra Alves Batistioli | 26010319-2| ADSIS2B |
+
 | Adriel Nícolas Souza Santos | 26012871-2 | ADSIS2B |
 
 
