@@ -1,18 +1,15 @@
-/* =========================================================================
+/* ==========================================================================
    PSE em Acao - Sistema de Planejamento e Acompanhamento de Acoes
-   Tematica escolhida: Saude Mental e Inclusao de estudantes Neurodivergentes (nivel coletivo e dados ficticios)
+   Tema: Saude Mental e Inclusao (informacoes COLETIVAS e dados ficticios)
 
-   Disciplina: AEP - Analise e Desenvolvimento de Sistemas - Unicesumar - 2 semestre - 2026
-   Curso/Serie: ADSIS2B
+   AEP - 2o semestre de 2026 - Analise e Desenvolvimento de Sistemas
+   Unicesumar - turma ADSIS2B - entrega final
+   
+   Limites eticos: o programa nao registra nome, diagnostico, laudo,
+   prontuario ou qualquer dado individual de estudantes e nao faz
+   diagnostico, triagem ou recomendacao de tratamento.
 
-   -------------------------------------------------------------------------
-   IMPORTANTE - LIMITES ETICOS DO SISTEMA:
-   Este programa NAO cadastra nome de aluno, diagnostico, laudo, prontuario
-   ou qualquer dado clinico/individual. Ele trabalha apenas com ACOES
-   COLETIVAS do Programa Saude na Escola (ex: rodas de conversa, capacitacao
-   de professores, semanas de acolhimento), preservando a privacidade dos
-   estudantes. O sistema NAO realiza diagnostico, triagem ou prescricao.
-   ========================================================================= */
+   ========================================================================== */
 
 #include <stdio.h>
 #include <string.h>
@@ -73,7 +70,7 @@ int main() {
     int opcao;
 
     printf("=====================================================\n");
-    printf(" PSE EM ACAO - Saude Mental e Inclusao de estudantes Neurodivergentes (dados ficticios)\n");
+    printf(" PSE EM ACAO - Saude Mental e Inclusao \n");
     printf("=====================================================\n");
 
     do {
