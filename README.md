@@ -35,7 +35,7 @@ pse-saude-mental-maringa/
 ├── src/
 │   └── pse_saude_mental.c      # código-fonte do sistema
 └── docs/
-    ├── 1_Entrega_AEP_PSE_SaudeMental.docx   # documento da 1ª entrega
+    ├── 1_Entrega_AEP_PSE_SaudeMental.docx   # documento final corrigido
     └── diagramas/
         ├── fluxograma_geral.png             # Figura 1 — menu principal
         └── fluxograma_cadastro.png          # Figura 2 — cadastro de ação
