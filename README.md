@@ -13,8 +13,8 @@ coletivas** do Programa Saúde na Escola (PSE), com recorte temático em
 
 ## Status do projeto
 
-Esta é a **1ª entrega** da AEP (documento escrito + planejamento), mas o código
-em `src/` já foi iniciado como preparação para a 2ª entrega.
+Esta é a **entrega final** da AEP com o repositório atualizado com novos diagramas, projeto teórico corrigido e o código
+em `src/` finalizado e pronto para execução.
 
 ## Integrantes do grupo
 
@@ -51,22 +51,17 @@ pse-saude-mental-maringa/
    registrando a quantidade efetiva de participantes quando realizada.
 5. Gerar resumo geral (quantidade por situação, total de participantes
    e percentual de participação).
-6. Validação de entradas: código duplicado, quantidade negativa, campo
+6. Gerar resumo por escola
+7. Carregar dados de demonstração para apresentação do projeto e testes
+8. Validação de entradas: código duplicado, quantidade negativa, campo
    obrigatório vazio e opção de menu inexistente.
 
-## Relação entre os códigos da 1ª entrega
+## Relação entre os códigos
 
 O código em `src/pse_saude_mental.c` segue a mesma lógica descrita no
 fluxograma geral, no fluxograma detalhado da operação de cadastro e no
 pseudocódigo em Portugol apresentados no documento
 `docs/1_Entrega_AEP_PSE_SaudeMental.docx`.
-
-## Próximos passos (2ª etapa da AEP)
-
-- [ ] Diagrama de casos de uso e descrição dos casos principais.
-- [ ] Manual do usuário com capturas de tela.
-- [ ] Testes manuais documentados.
-- [ ] Vídeo de apresentação (até 7 minutos).
 
 ## Licença
 
